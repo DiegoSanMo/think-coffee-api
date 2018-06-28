@@ -9,7 +9,7 @@ For this project you have to use the next command
 npm install 
 ```
 
-For this API we are using **MONGODB**, if you do not have installed mongodb you can download it here: [Mongo DB](https://www.mongodb.com/download-center?jmp=nav#enterprise)
+For this API we are using **MONGODB**, if you do not have installed mongodb you can download it here: [Mongo DB](https://www.mongodb.com/download-center?jmp=nav#community)
 
 After this steps you have to create a file with the name .env and inside of them put the next variables
 
