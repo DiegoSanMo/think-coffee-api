@@ -1,18 +1,19 @@
 # Think coffee API
-This is the API for think-coffee-client using EXPRESS and implement MONGODB
+This is the API for think-coffee-client using **EXPRESS** and **MONGO DB**
 
-Installation
+**Installation**
 
-first step:
+For this project you have to use the next command
+
 ```
 npm install 
 ```
 
-second step:
-For this API we are using MONGODB, if you do not have installed mongodb you can download it here: [mongodb](https://www.mongodb.com/download-center?jmp=nav#enterprise)
+For this API we are using **MONGODB**, if you do not have installed mongodb you can download it here: [Mongo DB](https://www.mongodb.com/download-center?jmp=nav#enterprise)
 
-If you have MongoDB you have to use the next command
+After this steps you have to create a file with the name .env and inside of them put the next variables
 
 ```
-npm install mongoose -save
+DB_NAME = (name of your DB)
+PORT = (your port)
 ```
