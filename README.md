@@ -9,7 +9,7 @@ npm install
 ```
 
 second step:
-For this API we are using MONGODB, if you do not have installed mongodb you can download it here: [mongodb] (https://www.mongodb.com/download-center?jmp=nav#enterprise)
+For this API we are using MONGODB, if you do not have installed mongodb you can download it here: [mongodb](https://www.mongodb.com/download-center?jmp=nav#enterprise)
 
 If you have MongoDB you have to use the next command
 
