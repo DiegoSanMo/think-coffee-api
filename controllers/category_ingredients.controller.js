@@ -1,4 +1,4 @@
-"use scrict";
+'use strict'
 
 function testingCategoryIngredient(req, res) {
     res.status(200).send({message: "This is a testing of categories ingredient"})

@@ -1,13 +1,13 @@
-"use strict"
+'use strict'
 
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 
 // app is the object of express, this is the aplication's motor of backend
-var app = express();
+const app = express();
 
 // =============================================================================
-//                              LOAD ROUTES
+//                              USING BODY PARSE
 // =============================================================================
 
 // this convert the data in json object
@@ -20,8 +20,11 @@ app.use(bodyParser.json());
 
 var categoryProdRoute = require('./routes/category_product.routes');
 var categoryIngRoute = require('./routes/category_ingredient.routes');
-app.use('/api', categoryProdRoute)
-app.use('/api', categoryIngRoute)
+var userRoute = require('./routes/user.routes');
+
+app.use('/api', categoryProdRoute);
+app.use('/api', categoryIngRoute);
+app.use('/api', userRoute);
 // =============================================================================
 //                              ROUTE BASE
 // =============================================================================

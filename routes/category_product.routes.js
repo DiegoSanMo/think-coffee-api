@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
 //Loaded the dependencies of express
 var express = require('express');

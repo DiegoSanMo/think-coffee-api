@@ -1,13 +1,13 @@
-"use strict"
+'use strict'
 
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 // save a complete collection in a specifict document
-var schema = mongoose.Schema;
+let Schema = mongoose.Schema;
 
 //Creating a schema with the attributes
 
-var categoryProducSchema = schema({
+let categoryProducSchema = schema({
     name: String
 });
 

@@ -15,5 +15,11 @@ After this steps you have to create a file with the name .env and inside of them
 
 ```
 DB_NAME = (name of your DB)
-PORT = (your port)
+DB_PORT = (your port)
+```
+
+To execute the service, put the following command
+
+```
+npm start
 ```
