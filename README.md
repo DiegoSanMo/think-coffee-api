@@ -20,10 +20,6 @@ After this steps you have to create a file with the name .env and inside of them
 |   DB_NAME   | This variable is for the name of your DB            |
 |   DB_PORT   | This variable is for the port of your DB it's using |
 
-```
-DB_NAME = (name of your DB)
-DB_PORT = (your port)
-```
 
 To execute the service, put the following command
 
