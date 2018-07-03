@@ -11,7 +11,7 @@ var mongooes = require('mongoose');
 // =============================================================================
 
 var app = require('./app');
-const port = process.env.DB_PORT || 1234;
+const port = process.env.DB_PORT || 3000;
 
 // =============================================================================
 //                              CONNECTION WITH MONGO 
