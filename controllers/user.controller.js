@@ -73,8 +73,14 @@ function login(req, res){
 
     })
 }
+
+//Method to update user data
+function updateUser(req, res){
+
+}
 module.exports = {
     testingUser,
     createUser,
+    updateUser,
     login
 }

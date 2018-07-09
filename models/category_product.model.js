@@ -7,7 +7,7 @@ let Schema = mongoose.Schema;
 
 //Creating a schema with the attributes
 
-let categoryProducSchema = schema({
+let categoryProducSchema = Schema({
     name: String
 });
 

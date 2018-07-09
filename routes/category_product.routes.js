@@ -13,4 +13,6 @@ var api = express.Router();
 
 api.get('/category-product', categoryProductController.testingCategory);
 
+api.post('/create-category-product', categoryProductController.createCategoryP)
+
 module.exports = api;

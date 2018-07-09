@@ -16,4 +16,6 @@ api.post('/create-user', userController.createUser);
 
 api.post('/login', userController.login);
 
+api.put('/update-user/:id', md_auth.authentication, userController.updateUser);
+
 module.exports = api;

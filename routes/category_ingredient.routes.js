@@ -13,4 +13,6 @@ let api = express.Router();
 
 api.get('/category-ingredient', categoryIngredientController.testingCategoryIngredient);
 
+api.post('/create-category-ingredient', categoryIngredientController.createCategoryI)
+
 module.exports = api;
