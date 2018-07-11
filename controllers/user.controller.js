@@ -13,10 +13,10 @@ function testingUser( req, res){
 
 //Method to create a new user
 function createUser( req, res ) {
-    let user = new User();
+    var user = new User();
 
     // Get request params
-    let params = req.body;
+    var params = req.body;
 
     user.name = params.name;
     user.email = params.email;
@@ -76,11 +76,51 @@ function login(req, res){
 
 //Method to update user data
 function updateUser(req, res){
+    var id = req.params.id;
+
+    var update = req.body;
+    if( id !== req.tokenUser.sub){
+        return res.status(500).send({message: "No tienes permisos para actualizar los datos"})
+    }
+
+    User.findByIdAndUpdate(id, update, (error, updatedUser)=>{
+        if(error){
+            res.status(500).send({message: "Error al actualizar usuario"})
+        } else {
+            if( !updatedUser ){
+                res.status(404).send({message: "No se ha podido actualizar el usuario"})
+            } else {
+                res.status(200).send({updatedUser})
+            }
+        }
+    })
+}
+
+//Method to delete user data
+function deleteUser(req, res){
+    var id = req.params.id;
+
+    if(!id == req.tokenUser.sub){
+        return res.status(500).send({message: "No tienes permisos para actualizar los datos"})
+    }
+
+    User.findByIdAndRemove(id, (err, userDelete) => {
+        if(err){
+            return res.status(500).send({message: "Error al borrar usuario"})
+        } else {
+            if(!userDelete){
+                return res.status(404).send({message: "No se ha podido borrar al usuario"})
+            } else{
+                return res.status(200).send({ userDelete})
+            }
+        }
+    })
 
 }
 module.exports = {
     testingUser,
     createUser,
     updateUser,
+    deleteUser,
     login
 }

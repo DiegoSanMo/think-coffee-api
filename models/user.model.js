@@ -2,12 +2,12 @@
 
 const mongoose = require('mongoose');
 
-// save a complete collection in a specifict document
-let Schema = mongoose.Schema;
+// save a compvare collection in a specifict document
+var Schema = mongoose.Schema;
 
 //Creating a schema with the attributes
 
-let userSchema = Schema({
+var userSchema = Schema({
     name: String,
     email: String,
     password: String

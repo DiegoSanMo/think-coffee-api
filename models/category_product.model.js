@@ -2,13 +2,13 @@
 
 const mongoose = require('mongoose');
 
-// save a complete collection in a specifict document
-let Schema = mongoose.Schema;
+// save a compvare collection in a specifict document
+var Schema = mongoose.Schema;
 
 //Creating a schema with the attributes
 
-let categoryProducSchema = Schema({
+var categoryProducSchema = Schema({
     name: String
 });
 
-module.exports = mongoose.model('categoryProduct', categoryProducSchema)
+module.exports = mongoose.model('category_product', categoryProducSchema)

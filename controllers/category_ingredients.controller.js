@@ -5,9 +5,9 @@ function testingCategoryIngredient(req, res) {
 }
 
 function createCategoryI(req, res){
-    let categoryIngredient = new CategoryIngredient;
+    var categoryIngredient = new CategoryIngredient;
 
-    let params = req.body;
+    var params = req.body;
     categoryIngredient.name = params.name;
 
     if(params.name){

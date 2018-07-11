@@ -18,4 +18,7 @@ api.post('/login', userController.login);
 
 api.put('/update-user/:id', md_auth.authentication, userController.updateUser);
 
+api.delete('/delete-user/:id', md_auth.authentication, userController.deleteUser);
+
+
 module.exports = api;

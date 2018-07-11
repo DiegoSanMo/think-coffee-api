@@ -8,9 +8,9 @@ function testingCategory( req, res){
 }
 
 function createCategoryP( req, res ){
-    let category = new CategoryP;
+    var category = new CategoryP;
     
-    let params = req.body;
+    var params = req.body;
 
     category.name = params.name;
 
